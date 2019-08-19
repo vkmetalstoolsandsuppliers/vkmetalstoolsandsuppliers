@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.heading{
+    text-align: center;
+    background: darkblue;
+    color: white;
+    padding: 10px 0;
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    opacity: 0.9;
+    width: 100%;
+    z-index: 1;
+}
+
+main{
+    padding: 120px 0;
+    position: relative;
+    padding: 0 80px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.address p{
+    display: inline-block;
+    padding-top: 120px;
+    font-size: 28px;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+.address p span{
+    display: inline-block;
+    color: darkblue;
+    padding: 5px;
+}
+
+.details{
+    position: absolute;
+    top: 30%;
+    right: 18%;
+    max-width: 100%;
+}
+
+.details p{
+    display: inline-block;
+    font-size: 28px;
+    color: darkblue;
+    padding: 5px 2;
+    background: lightcyan;
+    margin: 8px 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+form label.name, label.number, label.email, label.message{
+    color: darkblue;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+form #name, #number, #email, #message{
+    width: 80%;
+    padding: 8px 0;
+    margin: 4px 0;
+}
+
+.location{
+    width: 100%;
+    border: 2px solid lightcyan;
+    margin-top: 280px;
+}
+
+.bottomnav{
+    background: lightcyan;
+}
+
+.bottomnav ul{
+    text-align: center;
+}
+
+.bottomnav li{
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+.bottomnav a{
+    text-decoration: none;
+    font-size: 20px;
+    color: darkblue;
+    font-family: 'Roboto Slab', serif;
+}
+
+footer{
+    background: black;
+    width: 100%;
+    text-align: center;
+}
+
+footer p{
+    display: inline-block;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.03em;
+    padding: 5px;
+}
+
+.creator{
+    text-decoration: underline;
+}
+
+.bottomnav a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1400px){
+    .heading{
+        font-size: 22px;
+        top: 0;
+    }
+
+    .details{
+        position: relative;
+        left: 0;
+        padding-top: 20px;
+    }
+
+    .location{
+        margin-top: 30px;
+    }
+
+    .address p{
+        font-size:26px;
+        padding-top: 80px;
+    }
+
+    .details p{
+        font-size: 26px;
+    }
+
+    form label.name, label.number, label.email, label.message{
+        font-size: 18px;
+    }
+
+    form #name, #number, #email, #message{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 650px){
+
+    .heading{
+        font-size: 16px;
+    }
+
+    .address p{
+        font-size: 20px;
+    }
+
+    .details p{
+        font-size: 20px;
+    }
+
+    form #name, #number, #email, #message{
+        width: 300px;
+    }
+
+    .location iframe{
+        height: 225px;
+    }
+
+    .bottomnav a{
+        font-size: 16px;
+    }
+
+    footer p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 470px){
+    
+    main{
+        padding: 0 35px;
+    }
+
+    .address p{
+        font-size: 18px;
+    }
+
+    .details p{
+        font-size: 18px;
+    }
+
+    form label.name, label.number, label.email, label.message{
+        font-size: 16px;
+    }
+    footer p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 370px){
+    main{
+        padding: 0 15px;
+    }
+
+    .address p{
+        font-size: 16px;
+    }
+
+    .details p{
+        font-size: 16px;
+    }
+
+    form label.name, label.number, label.email, label.message{
+        font-size: 14px;
+    }
+
+    form #name, #number, #email, #message{
+        width: 250px;
+        padding: 3px 0;
+    }
+
+    .location iframe{
+        height: 200px;
+    }
+
+    .bottomnav li{
+        display: block;
+        padding: 5px;
+    }
+
+    .bottomnav a{
+        font-size: 14px;
+    }
+
+    footer p{
+        font-size: 12px;
+    }
+}

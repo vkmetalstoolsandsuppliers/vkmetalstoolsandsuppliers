@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* tools, all machine tools, handtools, fastners, */
+header{
+    background: darkblue;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+header p{
+    display: inline-block;
+    font-size: 28px;
+    padding: 10px 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+main{
+    margin-top: 52px;
+}
+
+h1{
+    padding: 10px 0;
+    font-family: 'Roboto Slab', serif;
+    font-size: 26px;
+    background: lightcyan;
+    color: darkblue;
+    text-align: center;
+    margin-top: 5px;
+    position: sticky;
+    top: 52px;
+    z-index: 1;
+}
+
+img{
+    width: 250px;
+    height: 250px;
+    padding: 0 50px;
+    border: 2px solid black;
+    margin: 5px 5px;
+}
+
+section{
+    text-align: center;
+}
+
+div{
+    /* float: left; */
+    display: inline-block;
+    position: relative;
+    margin: 10px 0;
+}
+
+div p{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    padding-top: 100px;
+    background: rgba(0, 0, 139, 0.72);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 26px;
+    transition: opacity .2s, visibility .2s;
+}
+
+.bottomnav{
+    background: lightcyan;
+}
+
+.bottomnav ul{
+    text-align: center;
+}
+
+.bottomnav li{
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+.bottomnav a{
+    text-decoration: none;
+    font-size: 20px;
+    color: darkblue;
+    font-family: 'Roboto Slab', serif;
+}
+
+footer{
+    background: black;
+    width: 100%;
+    text-align: center;
+}
+
+footer p{
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    letter-spacing: 0.03em;
+    padding: 5px;
+}
+
+.bottomnav a:hover{
+    text-decoration: underline;
+}
+
+.creator{
+    text-decoration: underline;
+}
+
+section.bottomnav{
+    position: static;
+}
+
+div.around:hover p, div.aroundhollow:hover p, div.asqr:hover p, div.asqrhollow:hover p, div.ahex:hover p{
+    visibility: visible;
+    opacity: 1;
+}
+
+div.bround:hover p, div.bsquare:hover p, div.bhex:hover p{
+    visibility: visible;
+    opacity: 1;
+}
+
+div.cround:hover p{
+    visibility: visible;
+    opacity: 1;
+}
+
+div.delblaround:hover p, div.delblasqr:hover p, div.delwhiround:hover p, div.delwhisqr:hover p{
+    visibility: visible;
+    opacity: 1;
+}
+
+div.gunall:hover p, div.nyall:hover p{
+    visibility: visible;
+    opacity: 1;
+}
+
+div.ssround:hover p, div.sssqr:hover p, div.sssqrpipe:hover p{
+    visibility: visible;
+    opacity: 1;
+}
+
+div.mactools:hover p, div.hantools:hover p, div.fast:hover p{
+    visibility: visible;
+    opacity: 1;
+}
+
+div.alusheet:hover p, div.delsheet:hover p, div.nysheet:hover p, div.ssheet:hover p{
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and (max-width: 1600px){
+    img{
+        width: 200px;
+        height: 200px;
+    }
+
+    div p{
+        padding-top: 80px;
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    img{
+        width: 180px;
+        height: 180px;
+    }
+
+    div p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    img{
+        width: 150px;
+        height: 150px;
+    }
+
+    div p{
+        padding-top: 65px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 550px){
+
+    header p{
+        font-size: 24px;
+    }
+
+    img{
+        width: 180px;
+        height: 180px;
+    }
+
+    div p{
+        padding-top: 85px;
+        font-size: 20px;
+    }
+
+    h1{
+        font-size: 22px;
+        top: 48px;
+    }
+
+    .bottomnav a{
+        font-size: 18px;
+    }
+
+    footer p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    img{
+        width: 120px;
+        height: 120px;
+    }
+
+    div p{
+        padding-top: 50px;
+        font-size: 16px;
+    }
+
+    h1{
+        font-size: 20px;
+        top: 48px;
+    }
+
+    .bottomnav li{
+        display: block;
+        padding: 8px 0;
+    }
+
+    .bottomnav a{
+        font-size: 14px;
+    }
+}
