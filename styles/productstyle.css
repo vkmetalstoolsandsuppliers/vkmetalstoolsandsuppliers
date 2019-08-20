@@ -6,6 +6,7 @@
 /* tools, all machine tools, handtools, fastners, */
 header{
     background: darkblue;
+    opacity: 0.9;
     position: fixed;
     top: 0;
     width: 100%;
