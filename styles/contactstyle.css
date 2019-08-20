@@ -68,6 +68,18 @@ form #name, #number, #email, #message{
     margin: 4px 0;
 }
 
+form #submit{
+    border: 2px solid darkblue;
+    padding: 10px;
+    background-color: lightcyan;
+    border-radius: 3px;
+}
+
+form #submit:hover{
+    background: darkblue;
+    color: white;
+}
+
 .location{
     width: 100%;
     border: 2px solid lightcyan;
